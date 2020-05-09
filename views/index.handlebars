@@ -1,0 +1,29 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img src="/img/nodeweb.jpg" alt="" class="img-fluid" width="250" height="150">
+            <h1>
+                NodeJS Development Ebook
+            </h1>
+            <p class="lead">
+                Learn NodeJS Development<br> Ebook written by Lynford Lagondi
+            </p>
+        
+            <form action="/charge" method="POST">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_7udGpkXdOZkbjliP9ZtNZWnJ00IiZdVeKg"
+                    data-amount="3000"
+                    data-name=" NodeJS Development Ebook"
+                    data-description="Ebook written by Lynford Lagondi"
+                    data-image="/img/marketplace.png"
+                    data-locale="auto">
+                </script>
+                <script>
+                // Hide default stripe button
+                document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-success text-white btn-lg">Purchase For $30</button>
+            </form>
+        </div>
+</section>
