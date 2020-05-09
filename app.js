@@ -13,9 +13,7 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-// Set Static Folder
-//app.use(express.static('${__dirname}/public'));
-// Serve Static Assets
+// Serve Static Assets updated static
 app.use(express.static('public'));
 
 //index route
